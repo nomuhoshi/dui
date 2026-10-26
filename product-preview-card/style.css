@@ -1,0 +1,82 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    margin: 0;
+}
+
+
+.card{
+    display:flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    overflow: hidden;
+    width: 600px;
+}
+
+.product-image{
+    width: 50%;
+    object-fit:cover;
+
+}
+
+.category{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-info{
+    padding:32px;
+}
+
+.description{
+    color: hsl(228, 12%, 48%);
+    
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.price-new{
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.price-old{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor:pointer;
+}
+
+@media (max-width:600px){
+    .card{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .product-image{
+        width: 100%;
+
+    .product-info{
+        width: 100%;
+    }
+    }
+}

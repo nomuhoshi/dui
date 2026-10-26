@@ -1,0 +1,24 @@
+print("Enter your annual_salary:")
+annual_salary = int(input())
+print("Enter the percent of your salary to save,as a decimal:")
+portion_down_savings = float(input())
+print("Enter the cost of your dream home:")
+total_cost = int(input())
+print("Enter the annual return that you expect,as a decimal:")
+annual_return = float(input())
+
+current_savings = 0
+
+monthly_salary = annual_salary/12
+monthly_saving = monthly_salary*portion_down_savings
+monthly_return = annual_return/12
+i = 0
+
+while current_savings <= total_cost:
+	current_savings = (current_savings*(1+monthly_return) + monthly_saving)
+	if current_savings >= total_cost:
+		number_of_months = i
+		print("Number of months that you can buy this house is "+ str(number_of_months) + " month or " + str(number_of_months/12) +" years")
+	else:
+		i += 1
+	

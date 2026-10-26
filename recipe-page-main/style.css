@@ -1,0 +1,84 @@
+body{
+    background-color: hsl(30, 54%, 90%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Outfit',sans-serif;
+    padding: 48px 0;
+    box-sizing: border-box;
+    
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    width: 600px;
+    overflow: hidden;
+    margin: auto;
+    
+}
+.cover{
+    width: 100%;
+    padding: 16px 16px 0 16px;
+    box-sizing: border-box;
+    border-radius: 24px;
+}
+.content{
+    padding: 24px;
+}
+h1{
+    font-family: 'Young Serif',serif;
+    color: hsl(24, 5%, 18%);
+}
+h2{
+    font-family: 'Young Serif',serif;
+    color: hsl(14, 45%, 36%);
+}
+p{
+    color: hsl(30, 10%, 34%);
+    font-size:1rem;
+}
+
+.pre-time{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 16px;
+    padding: 16px;
+    
+}
+.pre-time h3{
+    color: hsl(332, 51%, 32%);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.pre-time ul{
+    color: hsl(30, 10%, 34%);
+    margin: 0;
+    padding-left: 24px;
+    
+}
+
+.pre-time ul li{
+    padding: 4px 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr:last-child{
+    border-bottom: none;
+}
+
+td{
+    padding: 12px 0;
+    color:hsl(30, 10%, 34%);
+}
+
+td:last-child{
+    color:hsl(14, 45%, 36%);
+    font-weight:700;
+}
